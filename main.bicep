@@ -9,7 +9,7 @@ module appPlanDeploy 'appPlan.bicep' = {
   name: 'appPlanDeploy'
   scope: rg
   params: {
-    namePrefix: 'bicepAppPlan'
+    namePrefix: 'bicep'
   }
 }
 

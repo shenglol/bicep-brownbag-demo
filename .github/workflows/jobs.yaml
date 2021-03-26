@@ -26,6 +26,5 @@ jobs:
           azcliversion: 2.21.0
           inlineScript: |
             az version
-            az account show
             az account set -s 996a2f3f-ee01-4ffd-9765-d2c3fc98f30a
             az deployment sub what-if -f main.bicep -l westus
