@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  test-bicep:
+  what-if-with-bicep:
     runs-on: ubuntu-latest
 
     steps:
