@@ -1,4 +1,4 @@
-name: Super-Linter
+name: Bicep CI/CD
 
 on:
   push:
@@ -31,5 +31,5 @@ jobs:
           inlineScript: |
             az version
             az account show
-            az account set -s e93d3ee6-fac1-412f-92d6-bfb379e81af2
-            az deployment sub what-if -f main.bicep -l eastus
+            az account set -s 996a2f3f-ee01-4ffd-9765-d2c3fc98f30a
+            az deployment sub what-if -f main.bicep -l westus
