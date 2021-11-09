@@ -1,4 +1,11 @@
 {
+  "cloud": {
+    "currentProfile": "AzureCloud",
+    "credentialPrecedence": [
+      "Environment",
+      "AzureCLI"
+    ]
+  },
   "moduleAliases": {
     "ts": {
       "my-specs": {

@@ -22,10 +22,13 @@ jobs:
 
       - name: Azure CLI script
         uses: azure/CLI@v1
+        env:
+          AZURE_TENANT_ID: 72f988bf-86f1-41af-91ab-2d7cd011db47
+          AZURE_CLIENT_ID: 90695cc8-2f39-4d74-bbeb-5cbd26c807d5
+          AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
         with:
           azcliversion: 2.30.0
           inlineScript: |
-            az login
             az version
             az account set -s a1bfa635-f2bf-42f1-86b5-848c674fc321
             az bicep build -f main.bicep
